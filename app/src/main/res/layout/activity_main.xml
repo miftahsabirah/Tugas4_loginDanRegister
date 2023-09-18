@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="35dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addUname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@id/addUname"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@id/addEmail"
+        android:layout_marginTop="30dp"
+        android:inputType="number"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@id/addPhone"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:textSize="11dp"
+        app:buttonTint="#D1D1D1"
+        android:layout_below="@+id/addPassword"
+        android:layout_marginTop="15dp"/>
+
+    <android.widget.Button
+        android:id="@+id/tombolRegistrasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CheckBox"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/buttonMiniReg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </android.widget.Button>
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/haveAcc"
+        android:layout_below="@+id/tombolRegistrasi"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/clickableLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#0D65F8"
+        android:clickable="true"
+        android:onClick="onTextClick"
+        android:layout_below="@+id/tombolRegistrasi"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/haveAccount"
+        android:layout_marginLeft="5dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_margin="35dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="180dp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addUnameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/addUnameLogin"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/CheckBoxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember"
+        android:textSize="11dp"
+        app:buttonTint="#D1D1D1"
+        android:layout_below="@+id/addPasswordLogin"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/forgetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPasswordLogin"
+        android:layout_alignParentEnd="true"
+        android:text="@string/forgot"
+        android:textColor="#0D65F8"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="-15dp">
+    </Button>
+
+    <android.widget.Button
+        android:id="@+id/tombolLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CheckBoxRemember"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/buttonLogin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </android.widget.Button>
+
+    <TextView
+        android:id="@+id/newMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/New"
+        android:layout_below="@+id/tombolLogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/clickableRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMiniReg"
+        android:textColor="#0D65F8"
+        android:clickable="true"
+        android:onClick="onTextClick"
+        android:layout_below="@+id/tombolLogin"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/newMember"
+        android:layout_marginLeft="5dp"/>
+
+
+
+</RelativeLayout>

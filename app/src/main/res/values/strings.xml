@@ -1,0 +1,19 @@
+<resources>
+    <string name="title">Register</string>
+    <string name="title2">Login</string>
+    <string name="title3">Homepage</string>
+    <string name="checkbox">By checking the box you agree to our Terms and Conditions</string>
+    <string name="buttonReg">Register</string>
+    <string name="buttonMiniLog">Log In</string>
+    <string name="haveAcc">Already Have an Account?</string>
+    <string name="remember">Remember Me</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="buttonLogin">Login</string>
+    <string name="New">New Member ?</string>
+    <string name="buttonMiniReg">Register</string>
+    <string name="app_name">Register</string>
+    <string name="title_activity_third_main">Register</string>
+    <string name="title_activity_second_main">Register</string>
+    <string name="first_fragment_label">Register</string>
+
+</resources>
